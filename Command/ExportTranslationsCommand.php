@@ -19,13 +19,40 @@ use Symfony\Contracts\Translation\TranslatorInterface;
  */
 class ExportTranslationsCommand extends Command
 {
-    private InputInterface $input;
-    private OutputInterface $output;
-    private StorageInterface $storage;
-    private TranslatorInterface $translator;
-    private string $projectDir;
-    private Filesystem $fileSystem;
-    private ExporterCollector $exporterCollector;
+    /**
+     * @var InputInterface
+     */
+    private $input;
+
+    /**
+     * @var OutputInterface
+     */
+    private $output;
+
+    /**
+     * @var StorageInterface
+     */
+    private $storage;
+
+    /**
+     * @var TranslatorInterface
+     */
+    private $translator;
+
+    /**
+     * @var string
+     */
+    private $projectDir;
+
+    /**
+     * @var Filesystem
+     */
+    private $fileSystem;
+
+    /**
+     * @var ExporterCollector
+     */
+    private $exporterCollector;
 
     public function __construct(
         StorageInterface $storage,

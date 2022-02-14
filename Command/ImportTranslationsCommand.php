@@ -23,10 +23,20 @@ use Symfony\Contracts\Translation\TranslatorInterface;
  */
 class ImportTranslationsCommand extends Command
 {
-    private TranslatorInterface $translator;
+    /**
+     * @var TranslatorInterface
+     */
+    private $translator;
 
-    private LocaleManager $localeManager;
-    private FileImporter $fileImporter;
+    /**
+     * @var LocaleManager
+     */
+    private $localeManager;
+
+    /**
+     * @var FileImporter
+     */
+    private $fileImporter;
 
     /**
      * @param TranslatorInterface $translator
