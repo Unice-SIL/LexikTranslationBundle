@@ -21,7 +21,7 @@
         "symfony/framework-bundle": "^4.0"
     },
     "require-dev": {
-        "symfony/symfony": "~4.4|~5.4",
+        "symfony/symfony": "~4.4",
         "alcaeus/mongo-php-adapter": "~1.0",
         "doctrine/orm": ">=2.4",
         "doctrine/doctrine-bundle": "~1.2",
